@@ -42,21 +42,25 @@ javac *.java
 
 
 
-**Run the program**
+Run the program
 
 java Main inputfile.txt
 
-
 Where inputfile.txt is a text file formatted as described above.
 
-**Output**
+
+
+Output
 The program outputs the maximum flow value.
 
 Details of augmenting paths and flow updates during computation.
 
 Final flow per edge.
 
-**Design Choices**
+
+
+
+Design Choices
 Data Structure: The flow network is represented using adjacency lists and capacity matrices, supporting efficient updates and queries.
 
 Algorithm: The Ford-Fulkerson method with BFS-based path search (Edmonds-Karp) or DFS for augmenting paths.
@@ -64,7 +68,10 @@ Algorithm: The Ford-Fulkerson method with BFS-based path search (Edmonds-Karp) o
 Complexity: The implementation has a time complexity of O(E * F) for Ford-Fulkerson, where E is edges and F is maximum flow; Edmonds-Karp achieves O(V * E^2).
 
 
-**Notes**
+
+
+
+Notes
 Input validation and error handling are implemented for robustness.
 
 Sample input files are included for testing.
